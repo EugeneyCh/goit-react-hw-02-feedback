@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './NotificationMessage.module.css';
 
 class NotificationMessage extends React.Component {
   render() {
