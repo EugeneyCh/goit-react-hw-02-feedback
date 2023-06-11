@@ -10,4 +10,5 @@ class NotificationMessage extends React.Component {
     );
   }
 }
+
 export default NotificationMessage;
