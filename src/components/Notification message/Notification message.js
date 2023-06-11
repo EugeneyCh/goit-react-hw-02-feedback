@@ -4,7 +4,7 @@ import css from './NotificationMessage.module.css';
 class NotificationMessage extends React.Component {
   render() {
     return (
-      <div>
+      <div className={css.notification}>
         <h3>There is no feedback</h3>
       </div>
     );
