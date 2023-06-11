@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 class FeedbackOptions extends React.Component {
   render() {
     const { options, onLeaveFeedback } = this.props;
-    console.log(options);
 
     return (
       <div className={css.buttonGroup}>
