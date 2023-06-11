@@ -1,0 +1,9 @@
+.buttonFeedback {
+  margin-left: 20px;
+  border-radius: 4px;
+}
+.buttonGroup {
+  display: flex;
+  margin-left: 20px;
+  gap: 20px;
+}
