@@ -2,35 +2,22 @@ import React from 'react';
 import css from './FeedbackOptions.module.css';
 
 class FeedbackOptions extends React.Component {
-  // ({ onLeaveFeedback }) =>
   render() {
     const { options, onLeaveFeedback } = this.props;
+    console.log(options);
+
     return (
       <div className={css.buttonGroup}>
-        <button
-          className={css.buttonFeedback}
-          name="good"
-          type="button"
-          onClick={onLeaveFeedback}
-        >
-          Good
-        </button>
-        <button
-          className={css.buttonFeedback}
-          name="neutral"
-          type="button"
-          onClick={onLeaveFeedback}
-        >
-          Neutral
-        </button>
-        <button
-          className={css.buttonFeedback}
-          name="bad"
-          type="button"
-          onClick={onLeaveFeedback}
-        >
-          Bad
-        </button>
+        {Object.keys(options).map(name => (
+          <button
+            key={name}
+            className={css.buttonFeedback}
+            name={name}
+            onClick={onLeaveFeedback}
+          >
+            {name}
+          </button>
+        ))}
       </div>
     );
   }
